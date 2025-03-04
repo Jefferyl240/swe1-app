@@ -2,7 +2,6 @@
 Django==5.1
 sqlparse==0.5.3
 tzdata==2025.1
-flake8
-black
-Coverage
-whitenoise
+flake8==7.1.2
+black==25.1.0
+coveralls==4.0.1
