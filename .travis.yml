@@ -1,4 +1,3 @@
-dist:local
 language: python
 
 python:
