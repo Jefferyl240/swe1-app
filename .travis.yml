@@ -1,9 +1,8 @@
+dist: focal
 language: python
 
 python:
-  - "3.8"
-  - "3.9"
-  - "3.10"
+  - 3.12
 
 install:
   - pip install -r requirements.txt
@@ -15,7 +14,7 @@ before_script:
 script:
   - black --check .
   - flake8 --max-line-length=150.
-  - coverage run manage.py test
+  - coverage run --source=swe1-app,polls manage.py test
 
 after_script:
   - coveralls
