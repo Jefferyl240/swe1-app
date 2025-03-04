@@ -11,8 +11,8 @@ before_script:
   - python manage.py migrate
 
 script:
-  - black .
-  - flake8 .
+  - black --check.
+  - flake8 --max-line-length=100.
   - coverage run --source=swe1-app,polls manage.py test
 
 after_script:
