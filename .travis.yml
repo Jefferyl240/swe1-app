@@ -22,9 +22,9 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: "$AWS_ACCESS_ID"
   secret_access_key: "$AWS_ACCESS_KEY"
-  region: "us-east-1"
-  app: "swe-app1"
-  env: "swe-app1"
+  region: "us-west-2"
+  app: "swe1-app"
+  env: "swe1-app"
   bucket_name: elasticbeanstalk-us-east-1-156041445795
   on:
     repo: Jefferyl240/swe1-app
